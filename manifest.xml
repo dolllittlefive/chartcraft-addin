@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>736c39b1-bd8b-40e5-9643-d14ef06d5c28</Id>
+  <Version>1.2.0.0</Version>
+  <ProviderName>ChartCraft</ProviderName>
+  <DefaultLocale>zh-CN</DefaultLocale>
+  <DisplayName DefaultValue="ChartCraft 图表"/>
+  <Description DefaultValue="生成原生 Excel 图表：数值修改后自动更新，收件人无需安装插件。"/>
+  <IconUrl DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/icon-80.png"/>
+  <SupportUrl DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/help.html"/>
+  <AppDomains><AppDomain>https://dolllittlefive.github.io</AppDomain></AppDomains>
+  <Hosts><Host Name="Workbook"/></Hosts>
+  <Requirements><Sets DefaultMinVersion="1.19"><Set Name="ExcelApi" MinVersion="1.19"/></Sets></Requirements>
+  <DefaultSettings><SourceLocation DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/taskpane.html?chart=pareto"/></DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Hosts>
+      <Host xsi:type="Workbook">
+        <DesktopFormFactor>
+          <GetStarted>
+            <Title resid="CC.GetStarted.Title"/>
+            <Description resid="CC.GetStarted.Description"/>
+            <LearnMoreUrl resid="CC.Help.Url"/>
+          </GetStarted>
+          <FunctionFile resid="CC.Commands.Url"/>
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <CustomTab id="CC.Tab">
+              <Group id="CC.G0"><Label resid="CC.G0.Label"/><Icon><bt:Image size="16" resid="CC.Icon.16"/><bt:Image size="32" resid="CC.Icon.32"/><bt:Image size="80" resid="CC.Icon.80"/></Icon><Control xsi:type="Button" id="CC.C0.Button"><Label resid="CC.C0.Label"/><Supertip><Title resid="CC.C0.Label"/><Description resid="CC.C0.Tip"/></Supertip><Icon><bt:Image size="16" resid="CC.Icon.16"/><bt:Image size="32" resid="CC.Icon.32"/><bt:Image size="80" resid="CC.Icon.80"/></Icon><Action xsi:type="ShowTaskpane"><TaskpaneId>CC.Taskpane.achievement</TaskpaneId><SourceLocation resid="CC.C0.Url"/></Action></Control><Control xsi:type="Button" id="CC.C1.Button"><Label resid="CC.C1.Label"/><Supertip><Title resid="CC.C1.Label"/><Description resid="CC.C1.Tip"/></Supertip><Icon><bt:Image size="16" resid="CC.Icon.16"/><bt:Image size="32" resid="CC.Icon.32"/><bt:Image size="80" resid="CC.Icon.80"/></Icon><Action xsi:type="ShowTaskpane"><TaskpaneId>CC.Taskpane.bullet</TaskpaneId><SourceLocation resid="CC.C1.Url"/></Action></Control><Control xsi:type="Button" id="CC.C2.Button"><Label resid="CC.C2.Label"/><Supertip><Title resid="CC.C2.Label"/><Description resid="CC.C2.Tip"/></Supertip><Icon><bt:Image size="16" resid="CC.Icon.16"/><bt:Image size="32" resid="CC.Icon.32"/><bt:Image size="80" resid="CC.Icon.80"/></Icon><Action xsi:type="ShowTaskpane"><TaskpaneId>CC.Taskpane.butterfly</TaskpaneId><SourceLocation resid="CC.C2.Url"/></Action></Control><Control xsi:type="Button" id="CC.C3.Button"><Label resid="CC.C3.Label"/><Supertip><Title resid="CC.C3.Label"/><Description resid="CC.C3.Tip"/></Supertip><Icon><bt:Image size="16" resid="CC.Icon.16"/><bt:Image size="32" resid="CC.Icon.32"/><bt:Image size="80" resid="CC.Icon.80"/></Icon><Action xsi:type="ShowTaskpane"><TaskpaneId>CC.Taskpane.columnline</TaskpaneId><SourceLocation resid="CC.C3.Url"/></Action></Control><Control xsi:type="Button" id="CC.C4.Button"><Label resid="CC.C4.Label"/><Supertip><Title resid="CC.C4.Label"/><Description resid="CC.C4.Tip"/></Supertip><Icon><bt:Image size="16" resid="CC.Icon.16"/><bt:Image size="32" resid="CC.Icon.32"/><bt:Image size="80" resid="CC.Icon.80"/></Icon><Action xsi:type="ShowTaskpane"><TaskpaneId>CC.Taskpane.deviation</TaskpaneId><SourceLocation resid="CC.C4.Url"/></Action></Control><Control xsi:type="Button" id="CC.C5.Button"><Label resid="CC.C5.Label"/><Supertip><Title resid="CC.C5.Label"/><Description resid="CC.C5.Tip"/></Supertip><Icon><bt:Image size="16" resid="CC.Icon.16"/><bt:Image size="32" resid="CC.Icon.32"/><bt:Image size="80" resid="CC.Icon.80"/></Icon><Action xsi:type="ShowTaskpane"><TaskpaneId>CC.Taskpane.dumbbell</TaskpaneId><SourceLocation resid="CC.C5.Url"/></Action></Control><Control xsi:type="Button" id="CC.C7.Button"><Label resid="CC.C7.Label"/><Supertip><Title resid="CC.C7.Label"/><Description resid="CC.C7.Tip"/></Supertip><Icon><bt:Image size="16" resid="CC.Icon.16"/><bt:Image size="32" resid="CC.Icon.32"/><bt:Image size="80" resid="CC.Icon.80"/></Icon><Action xsi:type="ShowTaskpane"><TaskpaneId>CC.Taskpane.growtharrow</TaskpaneId><SourceLocation resid="CC.C7.Url"/></Action></Control><Control xsi:type="Button" id="CC.C8.Button"><Label resid="CC.C8.Label"/><Supertip><Title resid="CC.C8.Label"/><Description resid="CC.C8.Tip"/></Supertip><Icon><bt:Image size="16" resid="CC.Icon.16"/><bt:Image size="32" resid="CC.Icon.32"/><bt:Image size="80" resid="CC.Icon.80"/></Icon><Action xsi:type="ShowTaskpane"><TaskpaneId>CC.Taskpane.lollipop</TaskpaneId><SourceLocation resid="CC.C8.Url"/></Action></Control><Control xsi:type="Button" id="CC.C9.Button"><Label resid="CC.C9.Label"/><Supertip><Title resid="CC.C9.Label"/><Description resid="CC.C9.Tip"/></Supertip><Icon><bt:Image size="16" resid="CC.Icon.16"/><bt:Image size="32" resid="CC.Icon.32"/><bt:Image size="80" resid="CC.Icon.80"/></Icon><Action xsi:type="ShowTaskpane"><TaskpaneId>CC.Taskpane.matrixbubble</TaskpaneId><SourceLocation resid="CC.C9.Url"/></Action></Control><Control xsi:type="Button" id="CC.C10.Button"><Label resid="CC.C10.Label"/><Supertip><Title resid="CC.C10.Label"/><Description resid="CC.C10.Tip"/></Supertip><Icon><bt:Image size="16" resid="CC.Icon.16"/><bt:Image size="32" resid="CC.Icon.32"/><bt:Image size="80" resid="CC.Icon.80"/></Icon><Action xsi:type="ShowTaskpane"><TaskpaneId>CC.Taskpane.multisegment</TaskpaneId><SourceLocation resid="CC.C10.Url"/></Action></Control><Control xsi:type="Button" id="CC.C12.Button"><Label resid="CC.C12.Label"/><Supertip><Title resid="CC.C12.Label"/><Description resid="CC.C12.Tip"/></Supertip><Icon><bt:Image size="16" resid="CC.Icon.16"/><bt:Image size="32" resid="CC.Icon.32"/><bt:Image size="80" resid="CC.Icon.80"/></Icon><Action xsi:type="ShowTaskpane"><TaskpaneId>CC.Taskpane.slope</TaskpaneId><SourceLocation resid="CC.C12.Url"/></Action></Control><Control xsi:type="Button" id="CC.C14.Button"><Label resid="CC.C14.Label"/><Supertip><Title resid="CC.C14.Label"/><Description resid="CC.C14.Tip"/></Supertip><Icon><bt:Image size="16" resid="CC.Icon.16"/><bt:Image size="32" resid="CC.Icon.32"/><bt:Image size="80" resid="CC.Icon.80"/></Icon><Action xsi:type="ShowTaskpane"><TaskpaneId>CC.Taskpane.threescale</TaskpaneId><SourceLocation resid="CC.C14.Url"/></Action></Control><Control xsi:type="Button" id="CC.C15.Button"><Label resid="CC.C15.Label"/><Supertip><Title resid="CC.C15.Label"/><Description resid="CC.C15.Tip"/></Supertip><Icon><bt:Image size="16" resid="CC.Icon.16"/><bt:Image size="32" resid="CC.Icon.32"/><bt:Image size="80" resid="CC.Icon.80"/></Icon><Action xsi:type="ShowTaskpane"><TaskpaneId>CC.Taskpane.variablewidthbar</TaskpaneId><SourceLocation resid="CC.C15.Url"/></Action></Control></Group>
+<Group id="CC.G1"><Label resid="CC.G1.Label"/><Icon><bt:Image size="16" resid="CC.Icon.16"/><bt:Image size="32" resid="CC.Icon.32"/><bt:Image size="80" resid="CC.Icon.80"/></Icon><Control xsi:type="Button" id="CC.C6.Button"><Label resid="CC.C6.Label"/><Supertip><Title resid="CC.C6.Label"/><Description resid="CC.C6.Tip"/></Supertip><Icon><bt:Image size="16" resid="CC.Icon.16"/><bt:Image size="32" resid="CC.Icon.32"/><bt:Image size="80" resid="CC.Icon.80"/></Icon><Action xsi:type="ShowTaskpane"><TaskpaneId>CC.Taskpane.gantt</TaskpaneId><SourceLocation resid="CC.C6.Url"/></Action></Control></Group>
+<Group id="CC.G2"><Label resid="CC.G2.Label"/><Icon><bt:Image size="16" resid="CC.Icon.16"/><bt:Image size="32" resid="CC.Icon.32"/><bt:Image size="80" resid="CC.Icon.80"/></Icon><Control xsi:type="Button" id="CC.C11.Button"><Label resid="CC.C11.Label"/><Supertip><Title resid="CC.C11.Label"/><Description resid="CC.C11.Tip"/></Supertip><Icon><bt:Image size="16" resid="CC.Icon.16"/><bt:Image size="32" resid="CC.Icon.32"/><bt:Image size="80" resid="CC.Icon.80"/></Icon><Action xsi:type="ShowTaskpane"><TaskpaneId>Office.AutoShowTaskpaneWithDocument</TaskpaneId><SourceLocation resid="CC.C11.Url"/></Action></Control><Control xsi:type="Button" id="CC.C13.Button"><Label resid="CC.C13.Label"/><Supertip><Title resid="CC.C13.Label"/><Description resid="CC.C13.Tip"/></Supertip><Icon><bt:Image size="16" resid="CC.Icon.16"/><bt:Image size="32" resid="CC.Icon.32"/><bt:Image size="80" resid="CC.Icon.80"/></Icon><Action xsi:type="ShowTaskpane"><TaskpaneId>CC.Taskpane.stackedplus</TaskpaneId><SourceLocation resid="CC.C13.Url"/></Action></Control></Group>
+<Group id="CC.G3"><Label resid="CC.G3.Label"/><Icon><bt:Image size="16" resid="CC.Icon.16"/><bt:Image size="32" resid="CC.Icon.32"/><bt:Image size="80" resid="CC.Icon.80"/></Icon><Control xsi:type="Button" id="CC.C16.Button"><Label resid="CC.C16.Label"/><Supertip><Title resid="CC.C16.Label"/><Description resid="CC.C16.Tip"/></Supertip><Icon><bt:Image size="16" resid="CC.Icon.16"/><bt:Image size="32" resid="CC.Icon.32"/><bt:Image size="80" resid="CC.Icon.80"/></Icon><Action xsi:type="ShowTaskpane"><TaskpaneId>CC.Taskpane.waterfall</TaskpaneId><SourceLocation resid="CC.C16.Url"/></Action></Control></Group>
+              <Label resid="CC.Tab.Label"/>
+            </CustomTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+        <bt:Image id="CC.Icon.16" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/icon-16.png"/>
+        <bt:Image id="CC.Icon.32" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/icon-32.png"/>
+        <bt:Image id="CC.Icon.80" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/icon-80.png"/>
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="CC.C0.Url" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/taskpane.html?chart=achievement"/>
+<bt:Url id="CC.C1.Url" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/taskpane.html?chart=bullet"/>
+<bt:Url id="CC.C2.Url" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/taskpane.html?chart=butterfly"/>
+<bt:Url id="CC.C3.Url" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/taskpane.html?chart=columnline"/>
+<bt:Url id="CC.C4.Url" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/taskpane.html?chart=deviation"/>
+<bt:Url id="CC.C5.Url" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/taskpane.html?chart=dumbbell"/>
+<bt:Url id="CC.C6.Url" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/taskpane.html?chart=gantt"/>
+<bt:Url id="CC.C7.Url" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/taskpane.html?chart=growtharrow"/>
+<bt:Url id="CC.C8.Url" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/taskpane.html?chart=lollipop"/>
+<bt:Url id="CC.C9.Url" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/taskpane.html?chart=matrixbubble"/>
+<bt:Url id="CC.C10.Url" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/taskpane.html?chart=multisegment"/>
+<bt:Url id="CC.C11.Url" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/taskpane.html?chart=pareto"/>
+<bt:Url id="CC.C12.Url" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/taskpane.html?chart=slope"/>
+<bt:Url id="CC.C13.Url" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/taskpane.html?chart=stackedplus"/>
+<bt:Url id="CC.C14.Url" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/taskpane.html?chart=threescale"/>
+<bt:Url id="CC.C15.Url" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/taskpane.html?chart=variablewidthbar"/>
+<bt:Url id="CC.C16.Url" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/taskpane.html?chart=waterfall"/>
+        <bt:Url id="CC.Commands.Url" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/commands.html"/>
+        <bt:Url id="CC.Help.Url" DefaultValue="https://dolllittlefive.github.io/chartcraft-addin/help.html"/>
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="CC.Tab.Label" DefaultValue="ChartCraft"/>
+        <bt:String id="CC.G0.Label" DefaultValue="比较"/>
+<bt:String id="CC.C0.Label" DefaultValue="达成差额柱形图"/>
+<bt:String id="CC.C1.Label" DefaultValue="子弹图"/>
+<bt:String id="CC.C2.Label" DefaultValue="蝴蝶图"/>
+<bt:String id="CC.C3.Label" DefaultValue="柱线与柱钉图"/>
+<bt:String id="CC.C4.Label" DefaultValue="偏差图"/>
+<bt:String id="CC.C5.Label" DefaultValue="滑珠/哑铃图"/>
+<bt:String id="CC.G1.Label" DefaultValue="项目与进度"/>
+<bt:String id="CC.C6.Label" DefaultValue="甘特图"/>
+<bt:String id="CC.C7.Label" DefaultValue="涨跌箭头与同比柱"/>
+<bt:String id="CC.C8.Label" DefaultValue="棒棒糖图"/>
+<bt:String id="CC.C9.Label" DefaultValue="矩阵气泡图"/>
+<bt:String id="CC.C10.Label" DefaultValue="多段条形/多层柱形"/>
+<bt:String id="CC.G2.Label" DefaultValue="构成与累计"/>
+<bt:String id="CC.C11.Label" DefaultValue="帕累托图"/>
+<bt:String id="CC.C12.Label" DefaultValue="斜率图"/>
+<bt:String id="CC.C13.Label" DefaultValue="堆积增强图"/>
+<bt:String id="CC.C14.Label" DefaultValue="三数量级组合图"/>
+<bt:String id="CC.C15.Label" DefaultValue="不等宽柱与条形"/>
+<bt:String id="CC.G3.Label" DefaultValue="变化与分解"/>
+<bt:String id="CC.C16.Label" DefaultValue="瀑布图"/>
+        <bt:String id="CC.GetStarted.Title" DefaultValue="ChartCraft 已就绪"/>
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="CC.C0.Tip" DefaultValue="选择含表头的三列：分类、计划（目标）、实际。差额分析：完成/未完成分色实际柱＋计划短横线＋上层差额柱；完成进度：已完成/未完成/超额堆积柱＋完成率三角；上下对比：完成率以100%为基线上下分色。"/>
+<bt:String id="CC.C1.Tip" DefaultValue="选择含表头的 4–7 列：分类、窄条值、参考刻线（可空）、1–4 个递增背景上限。原例按“类别、前2年、前10年、疫情后”排列；百分比按 6.0 表示 6.0%。"/>
+<bt:String id="CC.C2.Tip" DefaultValue="首行为表头：分类、左侧1–4列、右侧1–4列，可选中立项及末列独立计数；或4列：左分类、左值、右分类、右值。输入非负数字，整行留空可分组。公式自动联动，重绑保留格式。"/>
+<bt:String id="CC.C3.Tip" DefaultValue="首行为表头：分类、之前、之后。PDF221 版式的输入约定：43 代表 43%。独立第三指标模式另选第 4 列；单柱＋线为分类、柱值、线值。"/>
+<bt:String id="CC.C4.Tip" DefaultValue="三列含表头：分类、基期/目标、本期/实际。两列数值均须非负；差异额=本期−基期，差异率=差异额÷基期。基期0的率显示—。"/>
+<bt:String id="CC.C5.Tip" DefaultValue="含表头：三列（分类、系列A、系列B）生成水平哑铃或纵向滑珠，两点连线比较两组数据；两列（分类、完成率小数）生成进度滑珠柱。改源数据自动联动。"/>
+<bt:String id="CC.C6.Tip" DefaultValue="含表头3–5列：任务、开始日期、结束日期或持续天数，可加完成率(0–1)和责任人。日期须为Excel日期数值；结束不含当日，0天保留零长度。源值由公式自动重算。"/>
+<bt:String id="CC.C7.Tip" DefaultValue="首行为表头。两期：分类、基期、本期（3 列）；三年：分类、第1年、第2年、第3年（4 列）。各期数值须非负。"/>
+<bt:String id="CC.C8.Tip" DefaultValue="含表头：两列（分类、数值）生成等大圆点；三至四列（分类、增长率小数、规模、可选分组）生成原生气泡棒棒糖，支持2–15项。增长率按27%=0.27输入；修改绑定数值自动重算。"/>
+<bt:String id="CC.C9.Tip" DefaultValue="行列矩阵：首行列名、首列行名，其余非负数；两列“名称、数值”可用城市/项目网格。改数与标签由Excel公式更新。"/>
+<bt:String id="CC.C10.Tip" DefaultValue="第一列分类，其后2–8列为各系列数值（含表头，非负）。每个系列占一段（条形）或一层（柱形），同轴对齐。"/>
+<bt:String id="CC.C11.Tip" DefaultValue="选中两列数据（首行为表头：分类、数值），生成原生 Excel 图表。数值修改后图表自动更新，无需本插件。"/>
+<bt:String id="CC.C12.Tip" DefaultValue="首列分类，其后 2–12 期数值，首行为表头。百分比输入用 0.46 表示 46%。原生线条、端点和变化标签随单元格自动重算；多期变化比较首末两期。"/>
+<bt:String id="CC.C13.Tip" DefaultValue="第一列为分类（连体柱为期间，如年份），其后1–10列为堆积分段数值（非负，可留空）。变体：堆积柱＋顶部合计、补全堆积条形、连体面积柱形；可按选区增删行。"/>
+<bt:String id="CC.C14.Tip" DefaultValue="4 列含表头：分类、底部柱指标（≥0）、折线指标、顶部指标（气泡/顶部柱，≥0）。三个指标数量级不同也能同图呈现。"/>
+<bt:String id="CC.C15.Tip" DefaultValue="选择分类、宽度权重和数值。宽度与高度分别随源数据重算；堆积可追加数值列，普通变体支持正负值。"/>
+<bt:String id="CC.C16.Tip" DefaultValue="选择分类、1–8列数值，可选末列“类型”（变化/总计/小计）。有类型列时以该列为准；细分正负值围绕同一累计起点展开。"/>
+        <bt:String id="CC.GetStarted.Description" DefaultValue="在“ChartCraft”选项卡选择图表开始。"/>
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>

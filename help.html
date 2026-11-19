@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChartCraft 使用说明</title>
+<link rel="stylesheet" href="./taskpane.css">
+</head>
+<body>
+<main>
+  <h1>ChartCraft 使用说明</h1>
+  <section>
+    <h2>帕累托图</h2>
+    <p>1. 在工作表中准备两列数据：第一行为表头，第一列为分类，第二列为非负数值。</p>
+    <p>2. 选中整块数据（含表头），在“ChartCraft”选项卡点击“帕累托图”，在面板中点“使用当前选区”，再点“生成帕累托图”。</p>
+    <p>3. 图表放在数据右侧，计算用的辅助表以“CC_帕累托_编号”命名并隐藏。</p>
+  </section>
+  <section>
+    <h2>数据更新</h2>
+    <p>修改已有数值：图表自动重新排序并更新累计百分比和阈值线，不需要本插件，发给没有安装插件的人也一样。</p>
+    <p>增加或删除数据行：重新选中完整数据区域，在面板列表中点“按选区更新”。已有图表的手工格式会保留。</p>
+  </section>
+  <section>
+    <h2>数据与隐私</h2>
+    <p>插件只在你的 Excel 中读写当前工作簿，不向任何服务器发送表格数据。</p>
+  </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChartCraft 图表</title>
+<link rel="stylesheet" href="./taskpane.css">
+<script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+<script type="module" src="./taskpane.js"></script>
+</head>
+<body><main>
+<header><h1>ChartCraft 图表</h1><div id="status" class="status" role="status" aria-live="polite"></div></header>
+<section aria-labelledby="instances-title"><h2 id="instances-title">编辑已有图表</h2>
+<p class="hint">“编辑数据”会选中原始数据表。直接改值即可自动重算；增删行后，选中含表头的完整区域，再点对应图表的“按选区更新”。</p>
+<button id="refresh-instances" type="button" disabled>识别所选图表 / 刷新</button>
+<p id="instance-context" class="info" aria-live="polite">正在读取本工作簿中的图表…</p>
+<ul id="instances" class="instances"><li class="empty">正在读取…</li></ul></section>
+<section aria-labelledby="chart-tools-title"><h2 id="chart-tools-title">图表工具</h2>
+<p class="hint">先选中普通单系列原生图表；Windows 支持簇状柱、堆积柱和面积图。平均线会随原数据自动更新。</p>
+<button id="add-average-line" type="button" disabled>为所选图表添加平均线</button>
+<p class="hint">选中多个图表或绘图对象，以第一个为参照统一尺寸，保留各自位置。</p>
+<button id="unify-size" type="button" disabled>统一大小</button>
+<p class="hint">翻转无次坐标轴的簇状、堆积或百分比条形图；再次点击可还原。</p>
+<button id="reverse-category" type="button" disabled>翻转类别</button>
+<p class="hint">在原位复制原生图表，按原版规则窄化折线、散点和雷达系列的图例。</p>
+<button id="legend-narrow" type="button" disabled>图例窄化</button></section>
+<section><h2>新建图表</h2><nav id="gallery" aria-label="图表库"></nav></section>
+<section><h2 id="chart-title"></h2><p id="chart-description" class="hint"></p>
+<button id="use-selection" type="button" disabled>使用当前选区</button>
+<div id="selection-info" class="info" aria-live="polite">尚未选择数据</div></section>
+<section><h2>选项</h2><div id="options"></div></section>
+<section><button id="generate" type="button" class="primary" disabled>生成图表</button></section>
+</main></body></html>
